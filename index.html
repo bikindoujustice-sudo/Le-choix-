@@ -29,37 +29,58 @@
     <button class="snipcart-checkout">🛒 Mon Panier (0)</button>
   }
 
-  header h1 {
-    margin: 0;
-    font-size: 2.2rem;
-    <img src="https://placeholder.com" alt="Produit 1">
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
+<div class="container">
+  <!-- CATEGORIE 1 : PARFUM -->
+  <div class="product-card">
+    <img src="https://unsplash.com" alt="Parfum de Luxe">
+    <h3>Parfum Signature</h3>
+    <p>Une fragrance envoûtante et longue durée aux notes subtiles et raffinées pour toutes les occasions.</p>
+    <div class="product-price">45.00 €</div>
+    <button class="buy-btn snipcart-add-item"
+            data-item-id="parfum-signature"
+            data-item-price="45.00"
+            data-item-description="Parfum Signature Haute Qualité"
+            data-item-image="https://unsplash.com"
+            data-item-name="Parfum Signature">
+      Ajouter au panier
+    </button>
+  </div>
 
-  header p {
-    font-size: 1rem;
-    color: #999;
-    margin: 12px 0 0 0;
-  }
+  <!-- CATEGORIE 2 : PRODUIT DE MÉNAGE -->
+  <div class="product-card">
+    <img src="https://unsplash.com" alt="Produit de Ménage">
+    <h3>Nettoyant Multi-Surfaces</h3>
+    <p>Formule ultra-efficace qui dégraisse et fait briller votre maison tout en laissant une fraîcheur durable.</p>
+    <div class="product-price">12.50 €</div>
+    <button class="buy-btn snipcart-add-item"
+            data-item-id="produit-menage-multi"
+            data-item-price="12.50"
+            data-item-description="Nettoyant ménager multi-surfaces efficace"
+            data-item-image="https://unsplash.com"
+            data-item-name="Nettoyant Multi-Surfaces">
+      Ajouter au panier
+    </button>
+  </div>
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    padding: 60px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  <!-- CATEGORIE 3 : PRODUIT DE CHEVEUX -->
+  <div class="product-card">
+    <img src="https://unsplash.com" alt="Produit Capillaire">
+    <h3>Sérum Capillaire Nutritif</h3>
+    <p>Soin intense enrichi en huiles naturelles pour hydrater, fortifier et redonner un éclat éclatant à vos cheveux.</p>
+    <div class="product-price">24.99 €</div>
+    <button class="buy-btn snipcart-add-item"
+            data-item-id="serum-cheveux-nutritif"
+            data-item-price="24.99"
+            data-item-description="Sérum capillaire pour la brillance et la force"
+            data-item-image="https://unsplash.com"
+            data-item-name="Sérum Capillaire Nutritif">
+      Ajouter au panier
+    </button>
+  </div>
+</div>
 
-  .product-card {
-    background: var(--card-bg);
-    padding: 24px;
-    width: 290px;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
-    border: 1px solid #f0f0f0;
+
+    
     transition: transform 0.4s ease, box-shadow 0.4s ease;
   }
 
