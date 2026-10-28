@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+o<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -22,12 +22,12 @@
     color: #222;
   }
 
-  header {
-    text-align: center;
-    padding: 60px 20px;
-    background: var(--primary-color);
-    <button class="snipcart-checkout">🛒 Mon Panier (0)</button>
-  }
+  <header>
+  <h1>Le choix</h1>
+  <p>Faites le meilleur choix parmi nos articles exclusifs</p>
+  <!-- Bouton pour voir le panier -->
+  <button class="snipcart-checkout">🛒 VOIR MON PANIER (0)</button>
+</header>
 
 <div class="container">
   <!-- CATEGORIE 1 : PARFUM -->
@@ -78,144 +78,6 @@
     </button>
   </div>
 </div>
-
-
-    
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-  }
-
-  .product-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 38px rgba(0,0,0,0.06);
-  }
-
-  .product-card img {
-    max-width: 100%;
-    height: 240px;
-    object-fit: cover;
-    background-color: #f5f5f5;
-  }
-
-  .product-card h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin: 20px 0 8px 0;
-    color: var(--primary-color);
-    text-transform: uppercase;
-  }
-
-  .product-card p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    line-height: 1.5;
-    margin: 0 0 15px 0;
-    height: 45px;
-    overflow: hidden;
-  }
-
-  .product-price {
-    font-size: 1.3rem;
-    color: var(--accent-color);
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-
-  .buy-btn, .snipcart-checkout {
-    background-color: var(--primary-color);
-    color: white;
-    border: 1px solid var(--primary-color);
-    padding: 14px 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    cursor: pointer;
-    width: 100%;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-  }
-
-  .buy-btn:hover {
-    background-color: transparent;
-    color: var(--primary-color);
-  }
-
-  .snipcart-checkout {
-    background-color: transparent;
-    color: white;
-    border-color: rgba(255,255,255,0.3);
-    width: auto;
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
-    font-size: 0.8rem;
-  }
-
-  .snipcart-checkout:hover {
-    background-color: white;
-    color: var(--primary-color);
-    border-color: white;
-  }
-
-        
-
-        
-        
-        
-        
-        
-    </style>
-    <!-- Connexion au système de panier Snipcart -->
-    <link rel="preconnect" href="https://snipcart.com">
-    <link rel="preconnect" href="https://snipcart.com">
-    <link rel="stylesheet" href="https://snipcart.com/themes/v3.4.1/default/snipcart.css" />
-</head>
-<body>
-
-    <header>
-        <h1>Le choix</h1>
-        <p>Faites le meilleur choix parmi nos articles exclusifs</p>
-        <!-- Bouton pour voir le panier -->
-        <button class="snipcart-checkout" style="background: #2ecc71; color: white; border: none; padding: 10px; cursor: pointer; border-radius: 4px;">🛒 Voir mon panier (<span class="snipcart-items-count">0</span>)</button>
-    </header>
-
-    <div class="container">
-        <!-- PRODUIT 1 -->
-        <div class="product-card">
-            <img src="https://placeholder.com" alt="Produit 1">
-            <h3>Premier Article</h3>
-            <p>Description de votre premier produit à modifier.</p>
-            <div class="product-price">19.99 €</div>
-            <!-- Bouton d'achat connecté au panier -->
-            <button class="buy-btn snipcart-add-item"
-                data-item-id="article-01"
-                data-item-price="19.99"
-                data-item-description="Description de votre premier produit."
-                data-item-image="https://placeholder.com"
-                data-item-name="Premier Article">
-                Ajouter au panier
-            </button>
-        </div>
-
-        <!-- PRODUIT 2 -->
-        <div class="product-card">
-            <img src="https://placeholder.com" alt="Produit 2">
-            <h3>Deuxième Article</h3>
-            <p>Description de votre deuxième produit à modifier.</p>
-            <div class="product-price">29.99 €</div>
-            <button class="buy-btn snipcart-add-item"
-                data-item-id="article-02"
-                data-item-price="29.99"
-                data-item-description="Description de votre deuxième produit."
-                data-item-image="https://placeholder.com"
-                data-item-name="Deuxième Article">
-                Ajouter au panier
-            </button>
-        </div>
-    </div>
-
-    <!-- Script requis pour faire fonctionner le panier -->
-    <script async src="https://snipcart.com/themes/v3.4.1/default/snipcart.js"></script>
-    <div id="snipcart" data-api-key="YTMzZGVmYTAtNWU5Yi00M2ZkLWI3YmEtZGU0OTg2OTY4YmM2NjM4MzQ2OTM4OTYxNDExMzYw" hidden></div>
 
 </body>
 </html>
